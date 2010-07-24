@@ -12,23 +12,58 @@ xmlns:ymaps="http://api.maps.yahoo.com/Maps/V1/AnnotatedMaps.xsd">
 
    <item>
      <title>Indian Oil Richmond Circle</title>
-     <description>Indian Oil Bunk, Richmond Circle</description>
+     <description>Fuel Consumption(in lts) : 2000</description>
      <geo:lat>12.970894663353144</geo:lat>
      <geo:long>77.61926651000977</geo:long>
      <ymaps:GroupId>ioc</ymaps:GroupId>
    </item>
    <item>
      <title>Indian Oil MG Road</title>
-     <description>Indian Oil Bunk, MG Road</description>
+     <description>Fuel Consumption(in lts) : 4000</description>
      <geo:lat>12.976289426815732</geo:lat>
      <geo:long>77.59913921356201</geo:long>
      <ymaps:GroupId>ioc</ymaps:GroupId>
    </item>
    <item>
      <title>Indian Oil Koramangala</title>
-     <description>Indian Oil Bunk, Koramangala</description>
+     <description>Fuel Consumption(in lts) : 1500</description>
      <geo:lat>12.931831415631512</geo:lat>
      <geo:long>77.61420249938965</geo:long>
+     <ymaps:GroupId>ioc</ymaps:GroupId>
+   </item>
+   <item>
+     <title>Indian Oil St. Joseph's </title>
+     <description>Fuel Consumption(in lts) : 1000</description>
+     <geo:lat>12.965165212807788</geo:lat>
+     <geo:long>77.597379684448</geo:long>
+     <ymaps:GroupId>ioc</ymaps:GroupId>
+   </item>
+   <item>
+     <title>Indian Oil Commercial Street</title>
+     <description>Fuel Consumption(in lts) : 2500</description>
+     <geo:lat>12.977627644596668</geo:lat>
+     <geo:long>77.608537673950</geo:long>
+     <ymaps:GroupId>ioc</ymaps:GroupId>
+   </item>
+   <item>
+     <title>Indian Oil St. Joseph's </title>
+     <description>Fuel Consumption(in lts) : 1000</description>
+     <geo:lat>12.965165212807788</geo:lat>
+     <geo:long>77.597379684448</geo:long>
+     <ymaps:GroupId>ioc</ymaps:GroupId>
+   </item>
+   <item>
+     <title>Indian Oil Church Street</title>
+     <description>Fuel Consumption(in lts) : 1000</description>
+     <geo:lat>12.9747839232031</geo:lat>
+     <geo:long>77.60772228240967</geo:long>
+     <ymaps:GroupId>ioc</ymaps:GroupId>
+   </item>
+   <item>
+     <title>Indian Oil Victoria Road</title>
+     <description>Fuel Consumption(in lts) : 1000</description>
+     <geo:lat>12.96671259566712</geo:lat>
+     <geo:long>77.6142883300781</geo:long>
      <ymaps:GroupId>ioc</ymaps:GroupId>
    </item>
 
