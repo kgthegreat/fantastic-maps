@@ -27,8 +27,8 @@ xmlns:ymaps="http://api.maps.yahoo.com/Maps/V1/AnnotatedMaps.xsd">
    <item>
      <title>Indian Oil Koramangala</title>
      <description>Fuel Consumption(in lts) : 1500</description>
-     <geo:lat>12.931831415631512</geo:lat>
-     <geo:long>77.61420249938965</geo:long>
+     <geo:lat>12.945675729694086</geo:lat>
+     <geo:long>77.607979774475</geo:long>
      <ymaps:GroupId>ioc</ymaps:GroupId>
    </item>
    <item>
