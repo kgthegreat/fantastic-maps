@@ -4,4 +4,5 @@ require 'sinatra'
 
 get '/' do
   haml :index
+ # erb :index
 end

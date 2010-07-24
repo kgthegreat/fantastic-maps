@@ -1,13 +1,12 @@
 %html
   %head
     %title Fantastic Maps
-    %script{:type=>'text/javascript', :src=>'http://api.maps.yahoo.com/ajaxymap?v=3.8&appid=FiW_hZnV34G3K.L0kYJ2SIS1gFPMTSXRrDrnC.7uBYqEcIh2PnKLQHbfgWbWq6lUTA--'}
-    %style{:type=>'text/css'}
-      #map {
-      height: 75%;
-      width: 100%;
-      }
+    %script{ :type=>"text/javascript",:src=>"http://api.maps.yahoo.com/ajaxymap?v=3.8&appid=FiW_hZnV34G3K.L0kYJ2SIS1gFPMTSXRrDrnC.7uBYqEcIh2PnKLQHbfgWbWq6lUTA--"}
+    %style{:type=>"text/css"}
+      :plain
+        #map {
+        height: 75%;
+        width: 100%;
+        }
   %body
-    %a{:href => '/'}Home
-    %br
     = yield

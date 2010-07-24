@@ -1,11 +1,10 @@
 %h1 Fantastic Maps
 %div{:id=>'map'}
-  %script{:type=>'text/javascript'}
-    var map = new YMap(document.getElementById('map'));
-    map.addTypeControl();
-    map.setMapType(YAHOO_MAP_REG);
-    map.drawZoomAndCentre("San Francisco", 3);
-
+%script{:type=>"text/javascript"}
+  var map = new YMap(document.getElementById('map'));
+  map.addTypeControl();
+  map.setMapType(YAHOO_MAP_REG);
+  map.drawZoomAndCenter("Bangalore", 3);
 
 
 
