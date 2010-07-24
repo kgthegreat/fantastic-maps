@@ -3,6 +3,15 @@ require 'sinatra'
 
 
 get '/' do
-  haml :index
+  redirect('area')
+ # haml :index
  # erb :index
+end
+
+get '/area' do
+  haml :area
+end
+
+get '/places' do
+  haml :places
 end

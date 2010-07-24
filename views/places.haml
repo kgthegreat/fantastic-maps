@@ -10,8 +10,14 @@
    map.addPanControl();
    map.setMapType(YAHOO_MAP_REG);
    map.drawZoomAndCenter("Bangalore", 3);
+   // example of annotation exported in GeoRSS
+   var myMap = new YAnnotation();
+   myMap.description = 'Description of my map';
+   myMap.title = 'The title of the map';
+   myMap.link = 'http://www.yahoo.com';
+   map.setAnnotation(myMap);
    YEvent.Capture(map, EventsList.MouseClick, reportPosition);
-    function reportPosition(_e, _c){
+   function reportPosition(_e, _c){
      // It is optional to specify the location of the Logger.
      // Do so by sending a YCoordPoint to the initPos function.
      var mapCoordCenter = map.convertLatLonXY(map.getCenterLatLon());
@@ -19,7 +25,7 @@
      // Printing to the Logger
      currentGeoPoint = new YGeoPoint( _c.Lat, _c.Lon);
      placeMarker(currentGeoPoint);
-     displayPolyLines(currentGeoPoint);
+     //displayPolyLines(currentGeoPoint);
      //YLog.print("You Made a MouseClick!");
      //YLog.print("Latitude:" + _c.Lat);
      //YLog.print("Longitude:" + _c.Lon);

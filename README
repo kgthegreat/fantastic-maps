@@ -1,0 +1,29 @@
+---------------------------
+Fantastic Maps
+---------------------------
+
+This App is for business owners.
+It allows them to visually fill relevant business data with the help of a map.
+
+More importantly, it allows them to analyze the data visually and also allows them to make location based query visually. i.e. they can draw lines
+
+
+---------------------------
+APIs Used
+---------------------------
+Yahoo Maps
+YUI Charts
+
+
+
+---------------------------
+DevStack
+---------------------------
+
+Ruby    ---- Language
+Sinatra ---- Framework
+Mongodb ---- Database
+Haml    ---- Html Goodness
+Heroku  ---- Hosting
+Code    ---- git://github.com/kgthegreat/fantastic-maps.git
+URL     ---- http://fantasticmaps.heroku.com/

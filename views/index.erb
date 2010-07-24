@@ -1,0 +1,31 @@
+<html>
+<head>
+<script type="text/javascript"
+src="http://api.maps.yahoo.com/ajaxymap?v=3.8&appid=YD-eQRpTl0_JX2E95l_xAFs5UwZUlNQhhn7lj1H"></script>
+<style type="text/css">
+#map{
+height: 75%;
+width: 100%;
+}
+</style>
+</head>
+<body>
+<div id="map"></div>
+
+<script type="text/javascript">
+        // Create a map object
+        var map = new YMap(document.getElementById('map'));
+
+        // Add map type control
+        map.addTypeControl();
+
+        // Set map type to either of: YAHOO_MAP_SAT, YAHOO_MAP_HYB, YAHOO_MAP_REG
+        map.setMapType(YAHOO_MAP_REG);
+
+        // Display the map centered on a geocoded location
+        map.drawZoomAndCenter("San Francisco", 3);
+</script>
+</body>
+</html>
+
+
