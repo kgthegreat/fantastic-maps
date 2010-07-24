@@ -1,0 +1,13 @@
+%html
+  %head
+    %title Fantastic Maps
+    %script{:type=>'text/javascript', :src=>'http://api.maps.yahoo.com/ajaxymap?v=3.8&appid=7umSBKzV34Em69NgL7z_sjyvJTtSG.cqdBfD_730Ddl3k8Erk4APymHg__fZOFcFEg--'}
+    %style{:type=>'text/css'}
+      #map {
+      height: 75%;
+      width: 100%;
+      }
+  %body
+    %a{:href => '/'}Home
+    %br
+    = yield
