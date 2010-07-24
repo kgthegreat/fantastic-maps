@@ -1,75 +1,37 @@
 <rss version="2.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
 xmlns:ymaps="http://api.maps.yahoo.com/Maps/V1/AnnotatedMaps.xsd">
 <channel>
-   <title>Sample XML file</title>
-   <link><![CDATA[http://www.frys.com]]></link>
-   <description>Sample result</description>
+   <title>Indian Oil</title>
+   <description>Indian Oil Petrol Bunks In Bangalore</description>
    <ymaps:Groups>
       <Group>
-         <Title>Fry's</Title>
-         <Id>frys</Id>
+         <Title>Indian Oil</Title>
+         <Id>ioc</Id>
       </Group>
-      <group>
-      <Title>Home Depot</Title>
-         <Id>homedepot</Id>
-         <BaseIcon><![CDATA[http://developer.yahoo.com/maps/star_green.gif]]></BaseIcon>
-      </group>
-      <group>
-         <Title>Yahoo!</Title>
-         <Id>yahoo</Id>
-         <BaseIcon><![CDATA[http://developer.yahoo.com/maps/star_red.gif]]></BaseIcon>
-      </group>
       </ymaps:Groups>
 
    <item>
-      <title>Fry's San Jose</title>
-      <link><![CDATA[http://www.frys.com/sanjose.html]]></link>
-      <description>San Jose Store</description>
-      <ymaps:Address>550 E. Brokaw Road</ymaps:Address>
-      <ymaps:CityState>San Jose, CA</ymaps:CityState>
-      <ymaps:GroupId>frys</ymaps:GroupId>
+     <title>Indian Oil Richmond Circle</title>
+     <description>Indian Oil Bunk, Richmond Circle</description>
+     <geo:lat>12.970894663353144</geo:lat>
+     <geo:long>77.61926651000977</geo:long>
+     <ymaps:GroupId>ioc</ymaps:GroupId>
    </item>
    <item>
-      <title>Fry's Sunnyvale</title>
-      <link><![CDATA[http://www.frys.com/sunnyvale.html]]></link>
-      <description>Sunnyvale Store</description>
-      <ymaps:Address>1077 East Arques Ave</ymaps:Address>
-      <ymaps:CityState>Sunnyvale, CA</ymaps:CityState>
-      <ymaps:GroupId>frys</ymaps:GroupId>
+     <title>Indian Oil MG Road</title>
+     <description>Indian Oil Bunk, MG Road</description>
+     <geo:lat>12.976289426815732</geo:lat>
+     <geo:long>77.59913921356201</geo:long>
+     <ymaps:GroupId>ioc</ymaps:GroupId>
    </item>
    <item>
-      <title>Fry's Palo Alto</title>
-      <link><![CDATA[http://www.frys.com/paloalto.html]]></link>
-      <description>Fuel Consumption :  800lts </description>
-      <geo:lat>12.9753</geo:lat>
-      <geo:long>77.598</geo:long>
-      <ymaps:GroupId>frys</ymaps:GroupId>
+     <title>Indian Oil Koramangala</title>
+     <description>Indian Oil Bunk, Koramangala</description>
+     <geo:lat>12.931831415631512</geo:lat>
+     <geo:long>77.61420249938965</geo:long>
+     <ymaps:GroupId>ioc</ymaps:GroupId>
    </item>
 
-   <item>
-      <title>HomeDepot Sunnyvale</title>
-      <link><![CDATA[http://www.smartpages.com/home/homedepott86187614]]></link>
-      <description>Sunnyvale Store</description>
-      <ymaps:Address>680 Kifer Rd</ymaps:Address>
-      <ymaps:CityState>Sunnyvale, CA</ymaps:CityState>
-      <ymaps:GroupId>homedepot</ymaps:GroupId>
-   </item>
-   <item>
-      <title>HomeDepot Campbell</title>
-      <link><![CDATA[http://www.smartpages.com/home/homedepotinc17]]></link>
-      <description>Campbell Store</description>
-      <ymaps:Address>480 E Hamilton Ave</ymaps:Address>
-      <ymaps:CityState>Cambell, CA</ymaps:CityState>
-      <ymaps:GroupId>homedepot</ymaps:GroupId>
-   </item>
-   <item>
-      <title>Yahoo! Sunnyvale</title>
-      <link><![CDATA[http://developer.yahoo.com]]></link>
-      <description>Sunnyvale Campus</description>
-      <geo:lat>37.416384</geo:lat>
-      <geo:long>-122.024853</geo:long>
-      <ymaps:GroupId>yahoo</ymaps:GroupId>
-   </item>
 </channel>
 </rss>
 
