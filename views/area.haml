@@ -4,25 +4,6 @@
 :javascript
   var map = new YMap(document.getElementById('map'));
   polylinePoints = [];
-  places = [];
-  all_long = [];
-  all_lat = [];
-  var min_lat = 0;
-  var max_lat = 0;
-  var min_long = 0;
-  var max_long = 0;
-  all_map_array =
-  [
-   { name: "Richmond Circle", sale_in_lt: 2000, lat: 12.970894663353144 ,long: 77.61926651000977 },
-   { name: "MG Road", sale_in_lt: 4000, lat: 12.976289426815732 ,long: 77.59913921356201 },
-   { name: "Vellara Junction", sale_in_lt: 1500, lat: 12.9660852794514 ,long: 77.60690689086914 },
-   { name: "St. Josephs", sale_in_lt: 1000, lat: 12.965165212807788 ,long: 77.597379684448 },
-
-  ];
-
-  selected_map_array = [];
-  var a_fuelsale = '45000'
-  var a_vehicle = '230'
   function startMap(){
    map.addTypeControl();
    map.addZoomLong();
@@ -44,13 +25,7 @@
      //YLog.print("You Made a MouseClick!");
      //YLog.print("Latitude:" + _c.Lat);
      //YLog.print("Longitude:" + _c.Lon);
-     all_long.push(_c.Lon)
-     all_lat.push(_c.Lat)
-     if(all_long.length)
-     {
-     findMinMax();
      }
-    }
     function placeMarker(geoPoint){
      // Printing to the Logger
     // YLog.print("Adding marker at....");
@@ -87,47 +62,5 @@
     // Check to make sure we have at least 2 points to connect
      return (polylinePoints.length > 1);
     }
-
-    function findMinMax(){
-    for each (var item in all_long)
-    {
-    if (min_long == 0)
-    {
-    min_long = item;
-    max_long = item;
-    }
-    else if(min_long>item)
-    {
-    min_long = item;
-    }
-    else if(max_long<item)
-    {
-    max_long = item;
-    }
-    }
-    for each (var item in all_lat)
-    {
-    if (min_lat == 0)
-    {
-    min_lat = item;
-    max_lat = item;
-    }
-    else if(min_lat>item)
-    {
-    min_lat = item;
-    }
-    else if(max_lat<item)
-    {
-    max_lat = item;
-    }
-    }
-    for each (var item in all_map_array)
-    {
-    if((min_long<item.long)&&(max_long>>item.long)&&(min_lat<item.lat)&&(max_lat>item))
-    {
-
-    }
-    }
-  }
   }
   window.onload = startMap;

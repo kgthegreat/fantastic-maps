@@ -32,10 +32,11 @@
     }
     function placeMarker(geoPoint){
      // Printing to the Logger
-     YLog.print("Adding marker at....");
-     YLog.print("Latitude:" + geoPoint.Lat + "Longitude:" + geoPoint.Lon);
+     //YLog.print("Adding marker at....");
+     //YLog.print("Latitude:" + geoPoint.Lat + "Longitude:" + geoPoint.Lon);
      var newMarker= new YMarker(geoPoint);
      newMarker.addAutoExpand("Click to Add/Edit Details");
+     //     var markerMarkup = "<form name = \"input\" action= \"\post\" method=\"post\"><input type=\"hidden\" name=\"_method\" value=\"put\"><input type=\"text\" name=\"sale_in_lt\" size=\"30\" ><input type=\"button\" value=\"Select text\" onclick=\"setfocus()\"><input type=\"submit\" value=\"Submit\"> </form>";
      var markerMarkup = "Total Fuel Sales : "+ a_fuelsale;
      markerMarkup += "</br>";
      markerMarkup += "Total Vehicle Serviced : "+ a_vehicle;
