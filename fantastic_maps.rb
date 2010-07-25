@@ -15,3 +15,7 @@ end
 get '/places' do
   haml :places
 end
+
+get '/graph' do
+  erb :graph
+end

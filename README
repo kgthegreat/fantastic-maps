@@ -3,9 +3,13 @@ Fantastic Maps
 ---------------------------
 
 This App is for business owners.
-It allows them to visually fill relevant business data with the help of a map.
+It allows them to fill relevant business data for a location such as sales figure, profits etc. with the help of a yahoo map.
+For e.g. User can click on koramangala and add the business details pertaining to koramangala on the pop up that appears.
 
-More importantly, it allows them to analyze the data visually and also allows them to make location based query visually. i.e. they can draw lines
+More importantly, the app allows the user to analyze the fed data visually and also allows them to make location based query visually.
+So for e.g. the user can draw a boundary on the map and then expect a YUI chart giving out, lets say, the sales of the outlet in that location.
+
+A very good use case is analyzing the effect of billboard advertising in an area. After the business house puts up a billboard, they can come and select the area around the billboard and analyze the impact of advertising visually.
 
 
 ---------------------------

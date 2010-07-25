@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Sale Chart /title>
+
+<style type="text/css">
+/*margin and padding on body element
+  can introduce errors in determining
+  element position and are not recommended;
+  we turn them off as a foundation for YUI
+  CSS treatments. */
+body {
+        margin:0;
+        padding:0;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.1/build/fonts/fonts-min.css" />
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.1/build/datatable/assets/skins/sam/datatable.css" />
+<script type="text/javascript" src="http://yui.yahooapis.com/2.8.1/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+<script type="text/javascript" src="http://yui.yahooapis.com/2.8.1/build/json/json-min.js"></script>
+<script type="text/javascript" src="http://yui.yahooapis.com/2.8.1/build/element/element-min.js"></script>
+<script type="text/javascript" src="http://yui.yahooapis.com/2.8.1/build/datasource/datasource-min.js"></script>
+<script type="text/javascript" src="http://yui.yahooapis.com/2.8.1/build/datatable/datatable-min.js"></script>
+<script type="text/javascript" src="http://yui.yahooapis.com/2.8.1/build/swf/swf-min.js"></script>
+<script type="text/javascript" src="http://yui.yahooapis.com/2.8.1/build/charts/charts-min.js"></script>
+
+
+<!--begin custom header content for this example-->
+<style type="text/css">
+        #chart
+        {
+                width: 500px;
+                height: 350px;
+                margin-bottom: 10px;
+        }
+        .yui-dt-table {width: 500px;}
+
+        .chart_title
+        {
+                display: block;
+                font-size: 1.2em;
+                font-weight: bold;
+                margin-bottom: 0.4em;
+        }
+</style>
+<!--end custom header content for this example-->
+
+</head>
+
+ <body class="yui-skin-sam">
+
+
+<h1>Sale Chart</h1>
+
+<div class="exampleIntro">
+
+</div>
+<span class="chart_title">Summary of Indian Oil Petrol Pump Sales</span>
+<div id="chart">Unable to load Flash content. The YUI Charts Control requires Flash Player 9.0.45 or higher. You can download the latest version of Flash Player from the <a href="http://www.adobe.com/go/getflashplayer">Adobe Flash Player Download Center</a>.</p></div>
+
+<div id="datatable"></div>
+<script type="text/javascript">
+
+        YAHOO.widget.Chart.SWFURL = "http://yui.yahooapis.com/2.8.1/build/charts/assets/charts.swf";
+
+        //manipulating the DOM causes problems in ie, so create after window fires "load"
+        YAHOO.util.Event.addListener(window, "load", function()
+        {
+
+                YAHOO.example.annualIncome =
+                [
+                        { name: "Kormangala", sale_in_lt: 1246852 },
+                        { name: "Silk Board", sale_in_lt: 2451876 },
+                        { name: "Jayanagar", sale_in_lt: 2917246  },
+                        { name: "Richmond Circle", sale_in_lt: 3318185 }
+                ];
+
+                var incomeData = new YAHOO.util.DataSource( YAHOO.example.annualIncome );
+                incomeData.responseType = YAHOO.util.DataSource.TYPE_JSARRAY;
+                incomeData.responseSchema = { fields: [ "name", "sale_in_lt" ] };
+
+
+                var seriesDef =
+                [
+                        {
+                                        xField: "sale_in_lt",
+                                displayName: "Fuel Consumption (in Lt)"
+                        }
+                ];
+
+                var currencyAxis = new YAHOO.widget.NumericAxis();
+                currencyAxis.labelFunction = "Sales in Lt";
+
+                var mychart = new YAHOO.widget.BarChart( "chart", incomeData,
+                {
+                        series: seriesDef,
+                        yField: "name",
+                        xAxis: currencyAxis,
+                        //only needed for flash player express install
+                        expressInstall: "assets/expressinstall.swf"
+                });
+
+        });
+
+</script>
+<!--END SOURCE CODE FOR EXAMPLE =============================== -->
+
+
+<!--MyBlogLog instrumentation-->
+<script type="text/javascript" src="http://track2.mybloglog.com/js/jsserv.php?mblID=2007020704011645"></script>
+
+</body>
+</html>
